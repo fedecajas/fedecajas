@@ -1,0 +1,36 @@
+%flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+%flex-row-center-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+/* Shadows */
+%boxshadow {
+    -webkit-box-shadow: 3px 8px 10px 7px rgba( $blackColor, .2);
+    -moz-box-shadow: 3px 8px 10px 7px rgba($blackColor,.2);
+    box-shadow: 3px 8px 10px 7px rgba($blackColor,.2);
+}

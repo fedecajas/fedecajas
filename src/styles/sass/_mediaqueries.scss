@@ -1,0 +1,155 @@
+@media screen and (max-width: 1630px) {
+    .map__container-card {
+        left: 10%;
+    }
+}
+@media screen and (max-width: $suppDesktop) {
+    .map__container-card {
+        left: unset;
+        right: 8%;
+    }
+}
+
+@media screen and (max-width: $wrapMain) {
+    .header__contact {
+        justify-content: center;
+    }
+    .header__nav {
+        justify-content: center;
+        &-links {
+            margin-top: $padding;
+        }
+    }
+}
+@media screen and (max-width: $landescape) {
+    .mainContainer__slide-slayer {
+        &_items {
+            width: 60%;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &_item {
+            & > h2 {
+                font-size: 1.4rem;
+                margin: 5px 0;
+            }
+            & > p {
+                font-size: 1rem;
+                text-align: center;
+                margin-bottom: $margin;
+            }
+        }
+        &_description {
+            & > h1 {
+                text-align: center;
+                margin-top: $margin;
+                font-size: 1.4rem;
+            }
+            & > p {
+                width: 80%;
+                font-size: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    .map__container-card {
+        right: 8%;
+        top: 20%;
+    }
+
+    .form__container {
+        width: 100%;
+        margin: $margin $margin / 6;
+    }
+}
+@media screen and (max-width: 814px) {
+    .header {
+        &__contact {
+            justify-content: center;
+            &-info {
+                & > p {
+                    margin: 0 0 6px 0;
+                }
+            }
+        }
+    }
+
+    .services {
+        flex-direction: column;
+        & > div {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: $tablet) {
+    .title__container {
+        justify-content: center;
+        margin: 0 auto;
+        padding: $padding 0 0 0;
+        &-h1 {
+            font-size: 1.4rem;
+        }
+    }
+    .header__nav {
+        justify-content: center;
+        padding: $padding 0;
+        &-links {
+            display: none;
+        }
+        & > button {
+            display: initial;
+        }
+    }
+    .map__container-card {
+        right: 5%;
+        top: 18%;
+    }
+}
+@media screen and (max-width: $smartphone) {
+    .title__container {
+        width: 100%;
+        flex-direction: row;
+        &-logo {
+            margin-bottom: 10px;
+        }
+        &-h1 {
+            font-size: 1.1rem;
+        }
+    }
+    .mainContainer__slide {
+        &-info_slider {
+            & > h2 {
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            & > h1 {
+                font-size: 3rem;
+                margin-bottom: $margin;
+            }
+        }
+        &-info_fest {
+            & > h1,
+            h2 {
+                font-size: 1.7rem;
+            }
+            & > h3 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .button__info-slider {
+        font-size: 0.8rem;
+    }
+
+    .map__container-card {
+        width: 100%;
+        position: unset;
+        box-shadow: none;
+        margin-bottom: $margin;
+        background-color: $whiteColor;
+    }
+}

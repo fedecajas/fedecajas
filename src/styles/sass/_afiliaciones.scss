@@ -1,0 +1,350 @@
+.afiliaciones-container,
+.formularios-container,
+.requeriments-container,
+.logos-container,
+.requisitos-container,
+.portafolio-container,
+.contenido-container,
+.trabajadores-container {
+    width: 100%;
+    max-width: 1280px;
+    text-align: center;
+    margin: $margin auto;
+    @extend %flex-column-center;
+
+    & > h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $primary;
+    }
+
+    & > p {
+        max-width: 1000px;
+        font-size: 1.3rem;
+        margin: $margin / 2 0 40px 0;
+        border-bottom: 2px solid #00cc00;
+        padding: 20px 40px;
+        color: black;
+    }
+
+    & > div {
+        max-width: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        & > div {
+            max-width: 400px;
+            margin: 0 auto;
+            @extend %flex-row-center;
+            align-items: flex-start;
+            & > figure {
+                max-width: 280px;
+                object-fit: cover;
+            }
+            & > h3 {
+                margin: $margin;
+                font-weight: 300;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+.pasos-container {
+    max-width: 80%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    flex-wrap: wrap;
+    & > div {
+        max-width: 400px;
+        margin: 0 20px;
+        @extend %flex-row-center;
+        align-items: flex-start;
+        & > figure {
+            width: 150px;
+            object-fit: cover;
+        }
+
+        & > h3 {
+            font-size: 1.3rem;
+            margin: $margin;
+        }
+
+        & > ul {
+            text-align: start;
+            font-size: 1rem;
+            color: black;
+            margin-bottom: $margin;
+
+            & > li {
+                list-style-type: disc;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.requisitos-container,
+.trabajadores-container {
+    & > div {
+        @extend %flex-row-center;
+        & > p {
+            max-width: 400px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            font-style: italic;
+            margin: 20px 20px 40px 20px;
+            padding: 20px 40px;
+            color: black;
+        }
+    }
+
+    & > p {
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.trabajadores-container {
+    & > div {
+        & > p {
+            max-width: 60%;
+            color: $primary;
+        }
+    }
+
+    &_list {
+        font-weight: 600;
+        & > li {
+            margin-bottom: $margin / 3;
+        }
+    }
+
+    &_list2 {
+        & > li {
+            margin-bottom: $margin;
+            line-height: 1.6rem;
+            font-size: 1.3rem;
+            font-weight: 200;
+            & > span {
+                font-size: 1rem;
+                font-weight: bold;
+                font-style: italic;
+                color: $primary;
+            }
+        }
+
+        & > ul {
+            margin: $margin;
+            font-size: 1.1rem;
+            & > li:first-child {
+                list-style-type: none;
+                font-weight: 400;
+            }
+            & > li {
+                font-weight: 200;
+                list-style-type: circle;
+                margin-bottom: $margin / 3;
+            }
+            & > span {
+                font-weight: bold;
+            }
+        }
+    }
+
+    & > ul {
+        max-width: 80%;
+        font-size: 1.1rem;
+        margin: $margin * 2 auto;
+        list-style-type: disc;
+        text-align: start;
+    }
+
+    & > p {
+        color: $primary;
+        text-transform: uppercase;
+    }
+}
+
+.formularios-container {
+    & > p {
+        text-align: center;
+    }
+    & > div {
+        & > div {
+            max-width: 240px;
+            padding: 0 10px;
+            & > a {
+                @extend %flex-row-center;
+                & > img,
+                & > figure {
+                    max-width: 100px;
+                    object-fit: cover;
+                }
+
+                & > h3 {
+                    margin-top: $margin;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: $blackColor;
+                }
+            }
+        }
+    }
+}
+
+.logos-container {
+    margin: $margin * 2 auto;
+    & > p {
+        text-align: center;
+    }
+    & > div {
+        & > div {
+            padding: 0 10px;
+            & > a {
+                @extend %flex-row-center;
+                align-items: flex-start;
+                & > figure {
+                    max-width: 300px;
+                }
+                & > h3 {
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                    color: $blackColor;
+                    margin: $margin;
+                }
+            }
+        }
+    }
+}
+
+.requeriments-container {
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+    & > div {
+        & > a {
+            width: 280px;
+            margin: 20px;
+            margin: 0 auto;
+            @extend %flex-row-center;
+            align-items: flex-start;
+            & > figure {
+                width: 200px;
+                transition: 0.1s;
+            }
+
+            & > figure:hover {
+                transform: scale(1.1);
+            }
+            & > h3 {
+                font-size: 1.8rem;
+                padding: 20px;
+                margin-top: 20px;
+                color: #04aa5d;
+                border-top: 1px dashed #04aa5d;
+            }
+        }
+    }
+
+    .paragraph {
+        font-weight: 400;
+        border: none;
+        padding: 1px;
+        margin: 1px;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+.portafolio-container {
+    & > h1 {
+        font-size: 2.2rem;
+        padding-bottom: 20px;
+        border-bottom: 2px dashed #00cc00;
+    }
+    & > ol {
+        margin: 20px 20px;
+        text-align: start;
+        & > li {
+            max-width: 900px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 14px;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba($color: #ffcc00, $alpha: 0.3);
+        }
+        & > li:nth-child(odd) {
+            background-color: rgba($color: #663300, $alpha: 0.3);
+        }
+        & > li::marker {
+            color: #00cc00;
+        }
+    }
+}
+
+.contenido-container {
+    & > div {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: rgba($color: #00cc00, $alpha: 0.2);
+        padding: 20px;
+        margin: 10px 0 20px 0;
+        border-radius: 1rem;
+        & > h2 {
+            color: $primary;
+            text-align: start;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin: $margin 0;
+        }
+        & > h3 {
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        & > ul,
+        ol {
+            text-align: start;
+            & > li,
+            span {
+                margin: $margin/ 2 $margin;
+            }
+            & > li {
+                font-size: 1.2rem;
+            }
+            & > span {
+                display: flex;
+                flex-direction: column;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    & > div:nth-child(odd) {
+        background-color: rgba($color: #ffcc00, $alpha: 0.2);
+    }
+}
+
+@media screen and (max-width: $smartphone) {
+    .afiliaciones-container,
+    .formularios-container,
+    .logos-container,
+    .contenido-container {
+        margin-top: 50px;
+    }
+
+    .portafolio-container {
+        & > ol {
+            & > li {
+                list-style-type: none;
+            }
+        }
+    }
+}

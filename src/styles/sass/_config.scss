@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+$main-font: 'Lato', 'system-ui, -apple-system, BlinkMacSystemFont, \
+Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, \
+Droid Sans, Helvetica Neue, sans-serif';
+
+/* Colors */
+$primary: #04aa5d;
+$greenComplement: #5DC269;
+$backgroundColor: rgba(16, 50, 18, 0.85);
+$backgroundSection: #003334;
+$secondary: #00cc00;
+$thirsty: #ffcc00;
+$complement: #663300;
+$whiteColor: #fafffb;
+$grayColor: #f1f2f6;
+$grayColor2: #ced4da;
+$blackColor: #272727;
+$blackColor2: #231E18;
+
+/* Sizes */
+$padding: 20px;
+$margin: 20px;
+$radius: 0.4rem;
+$heightHeader: 200px;
+
+/* Breakpoints */
+$phone: 360px;
+$smartphone: 490px;
+$tablet: 768px;
+$landescape: 999px;
+$wrapMain: 1120px;
+$suppDesktop: 1280px;
+$laptop: 1380px;
+$desktop: 1600px;
+$fullDesktop: 1920px;
+
+/* Z index */
+$landscape: (
+    backgrounds: -1,
+    raiz: 1,
+    content: 2,
+    carrousel: 3,
+    tooltip: 4,
+    contentModal: 5,
+    navmenu: 6,
+    modal: 7,
+    mobileMenu: 20
+);

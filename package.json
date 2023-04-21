@@ -1,20 +1,37 @@
 {
-  "name": "fede-front-latest",
-  "version": "0.1.0",
-  "private": true,
+  "name": "fedecajas",
+  "version": "2.0.0",
+  "description": "Página oficial de Fedecajas, creada con nextjs y strapi",
+  "author": "@pbyjo on github | byjo.developer@gmail.com",
+  "license": "ISC",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dev:start": "next dev",
+    "build:start": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "next": "13.3.0",
+    "@bradgarropy/next-seo": "^1.2.0",
+    "babel-plugin-macros": "^3.1.0",
+    "file-loader": "^6.2.0",
+    "next": "12.3",
     "react": "18.2.0",
+    "next-videos": "1.5.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0"
-  }
+    "eslint-config-next": "13.3.0",
+    "react-icons": "^4.8.0",
+    "sass": "^1.59.3",
+    "styled-components": "^5.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pbyjo/fedecajas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pbyjo/fedecajas/issues"
+  },
+  "homepage": "https://github.com/pbyjo/fedecajas#readme"
 }

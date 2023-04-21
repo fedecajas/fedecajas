@@ -1,0 +1,98 @@
+.map__container {
+    @extend %flex-row-center;
+    background-color: $grayColor2;
+    position: relative;
+    &-figure {
+        margin: $margin * 2;
+        position: relative;
+        & > figure {
+            width: 100%;
+            max-width: 680px;
+            object-fit: cover;
+        }
+    }
+    &-point,
+    &-card {
+        position: absolute;
+        animation-name: fadeIn;
+        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+        @extend %flex-column-center, %boxshadow;
+    }
+    &-point {
+        width: 5%;
+        height: 3.6%;
+        font-weight: bold;
+        font-size: 0.7rem;
+        border-radius: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: 0.1s;
+        border: 2px solid $whiteColor;
+        background-color: $primary;
+
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        will-change: transform, opacity;
+    }
+
+    &-point:hover {
+        transform: scale(1.1);
+        background-color: $thirsty;
+        animation-play-state: paused;
+    }
+
+    &-card {
+        width: 200px;
+        max-width: 340px;
+        left: 25%;
+        top: 30%;
+        padding: $padding / 2;
+        border-radius: $radius;
+        background-color: rgba($color: $whiteColor, $alpha: .7);
+
+        animation-duration: 0.5s;
+        will-change: transform, opacity;
+
+        & > figure {
+            max-width: 120px;
+            height: auto;
+        }
+
+        & > h2 {
+            margin: $margin / 4;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: capitalize;
+        }
+        & > h3 {
+            font-weight: 400;
+            font-size: .8rem;
+        }
+
+        & > h2, h3, p {
+            text-align: center;
+        }
+
+        & > a {
+            font-size: .8rem;
+            font-weight: bold;
+            margin-top: $margin / 2;
+            background-color: $primary;
+            border-radius: $radius;
+            padding: 5px 8px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

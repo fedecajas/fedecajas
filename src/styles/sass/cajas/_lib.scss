@@ -1,0 +1,120 @@
+.container__presentation,
+.container__trabajadores,
+.presentation__mapa {
+    width: 100%;
+    height: auto;
+    @extend %flex-column-center;
+    padding: $padding * 2 0;
+
+    background-image: url(../../../public/images/backgrounds/page-title-background.jpg);
+    background-position: top;
+    background-size: cover;
+    & > h1,
+    & > p {
+        text-align: center;
+        color: $whiteColor;
+        text-transform: capitalize;
+        z-index: map-get($landscape, content)
+    }
+    & > h1 {
+        font-size: 3rem;
+    }
+    & > p {
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: bold;
+    }
+}
+
+.container__trabajadores {
+    background-image: url(../../../public/images/backgrounds/page-trabajadores-background.webp);
+    background-position: bottom;
+    position: relative;
+    &-modal {
+        @extend %position-absolute;
+        background-color: rgba($color: $blackColor, $alpha: .3);
+        z-index: map-get($landscape, raiz);
+    }
+}
+
+.presentation__mapa {
+    background-image: url(../../../public/images/backgrounds/presentation-bg.jpg);
+}
+
+.container__body {
+    @extend %flex-row-center;
+    justify-content: space-evenly;
+    margin: $margin * 2 0;
+    padding: $padding;
+    &-logo {
+        width: 60%;
+        max-width: 680px;
+        margin-bottom: $margin;
+        @extend %flex-row-center;
+        & > figure {
+            max-width: 580px;
+            min-width: 320px;
+            height: auto;
+            transition: 0.1s;
+        }
+        & > figure:hover {
+            transform: scale(1.1);
+        }
+    }
+    &-info {
+        max-width: 620px;
+        padding: $padding;
+        @extend %flex-column-center;
+        align-items: flex-start;
+        border-radius: $radius;
+        border: 3px solid rgba($color: $blackColor2, $alpha: 0.2);
+        background-color: rgba($color: $secondary, $alpha: .1);
+
+        & > h1 {
+            font-size: 1.6rem;
+            color: $blackColor2;
+            margin-bottom: $margin / 3;
+        }
+
+        & > div {
+            width: 100%;
+            padding: $padding / 2 0;
+            border-bottom: 2px solid $grayColor2;
+            & > div {
+                @extend %flex-row-center;
+                justify-content: flex-start;
+                & > a {
+                    & > svg {
+                        color: $blackColor;
+                    }
+                }
+            }
+        }
+
+        & > div:last-child {
+            h2 {
+                margin-bottom: $margin / 2;
+            }
+            & > p {
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.container__resume {
+    max-width: 80%;
+    @extend %flex-row-center;
+    margin: $margin * 4 auto;
+    padding: $padding;
+    border-radius: $radius;
+    color: $whiteColor;
+    background-color: rgba($color: $primary, $alpha: 1);
+    & > p {
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 1.8rem;
+    }
+}

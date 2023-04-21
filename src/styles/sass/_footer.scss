@@ -1,0 +1,43 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: $grayColor2;
+    background-color: $blackColor2;
+    padding: 0 auto;
+    &__column {
+        min-width: 300px;
+        margin: $margin * 2;
+        @extend %flex-column-center;
+        align-items: flex-start;
+        & > h3, p {
+            margin-bottom: $margin / 2;
+            max-width: 300px;
+        }
+        & > figure {
+            margin-bottom: $margin;
+        }
+        &-data {
+            display: flex;
+            margin: $margin / 2 0;
+            & > svg {
+                margin-right: $margin / 2;
+            }
+            & > div {
+                flex-direction: column;
+                & > p {
+                    font-weight: 400;
+                }
+            }
+        }
+        &-logos {
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            & > figure {
+                margin: $margin / 4 $margin / 2;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.gce {
+    max-width: 1800px;
+    @extend %flex-row-center;
+    &__figure {
+        @extend %flex-row-center;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
+        margin: $margin * 2;
+    }
+
+    & > div {
+        max-width: 580px;
+        margin: $margin auto;
+        background-color: $grayColor;
+        border-radius: $radius;
+        padding: $padding;
+        & > h2 {
+            color: $primary;
+            font-size: 1.5rem;
+        }
+
+        & > p {
+            font-size: 1.1rem;
+            margin: $margin 0;
+        }
+    }
+}

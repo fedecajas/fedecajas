@@ -1,0 +1,64 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": [
+                "components/*"
+            ],
+            "@containers/*": [
+                "containers/*"
+            ],
+            "@elements/*": [
+                "elements/*"
+            ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@public/*": [
+                "public/*"
+            ],
+            "@images/*": [
+                "public/images/*"
+            ],
+            "@icons/*": [
+                "public/icons/*"
+            ],
+            "@logos/*": [
+                "public/logos/*"
+            ],
+            "@logosAliados/*": [
+                "public/logos_aliados/*"
+            ],
+            "@video/*": [
+                "public/video/*"
+            ],
+            "@documents/*": [
+                "public/documentos/*"
+            ],
+            "@styles/*": [
+                "styles/*"
+            ],
+            "@database/*": [
+                "database/*"
+            ],
+            "@context/*": [
+                "context/*"
+            ],
+            "@hooks/*": [
+                "hooks/*"
+            ],
+            "@static/*": [
+                "static/*"
+            ],
+            "@services/*": [
+                "services/*"
+            ],
+            "@utils/*": [
+                "utils/*"
+            ],
+            "@keys/*": [
+                "keys/*"
+            ],
+        }
+    }
+}

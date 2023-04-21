@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    color: $grayColor2;
+    position: sticky;
+    top: 0;
+    z-index: map-get($landscape, navmenu);
+    background-color: rgba($color: $backgroundColor, $alpha: 0.9);
+    &__contact {
+        @extend %flex-row-center-between;
+        background-color: $blackColor;
+        padding: 10px $padding * 3;
+        &-info,
+        &-redes {
+            @extend %flex-row-center;
+            text-align: center;
+            & > p {
+                font-size: 0.75rem;
+                font-weight: 600;
+                text-align: center;
+                margin: 8px;
+            }
+        }
+        &-redes {
+            margin-left: $margin;
+        }
+    }
+
+    &__nav {
+        @extend %flex-row-center;
+        justify-content: space-between;
+        padding: $padding $padding * 8;
+        position: relative;
+        &-links {
+            @extend %flex-row-center;
+            & > li {
+                & > a {
+                    @extend %flex-row-center;
+                    font-size: 0.9rem;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    margin: 5px 10px;
+                    color: $whiteColor;
+                    transition: 0.1s;
+
+                    & > svg {
+                        margin-right: 5px;
+                    }
+                }
+                & > a:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+        & > button {
+            display: none;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        &-menu {
+            @extend %flex-column-center;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            left: 50px;
+            right: 0;
+            bottom: 0;
+            overflow: scroll;
+            z-index: map-get($landscape, mobileMenu);
+            background-color: rgba($color: $blackColor2, $alpha: .9);
+            & > nav {
+                @extend %flex-column-center;
+                margin: $margin 0;
+                & > a {
+                    font-weight: bold;
+                    font-style: italic;
+                    margin: $margin / 2 0;
+                    color: $grayColor2;
+                }
+            }
+
+            & > button {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+            }
+        }
+    }
+
+    &__dropDown {
+        padding: $padding / 2;
+        background-color: rgba($color: $blackColor, $alpha: 1);
+        animation-name: fadeIn;
+        animation-duration: .5s;
+        will-change: opacity, transform;
+        & > ul {
+            @extend %flex-row-center;
+            & > li {
+                margin: $margin / 2;
+                padding: 3px 6px;
+                list-style-type: disc;
+                transition: 0.1s;
+                border-bottom: 1px solid rgba($color: $thirsty, $alpha: .4);
+                & > a {
+                    color: $whiteColor;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                }
+            }
+
+            & > li::marker {
+                color: $thirsty;
+            }
+            & > li:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
