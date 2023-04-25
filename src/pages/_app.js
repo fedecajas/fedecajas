@@ -41,9 +41,9 @@ const MyApp = ({ Component, pageProps }) => {
                 }}
             />
             {/* <DataContext> */}
-                <Layout title={myPathname === '' ? 'Inicio' : myPathname}>
-                    <Component {...pageProps} />
-                </Layout>
+            <Layout title={myPathname === '[[...path]]' ? '' : myPathname}>
+                <Component {...pageProps} />
+            </Layout>
             {/* </DataContext> */}
         </>
     )

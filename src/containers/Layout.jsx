@@ -22,7 +22,7 @@ function Layout(props) {
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" type="image/png" href={favicon.src} />
-                <title>{headTitle}</title>
+                <title>{title === '' ? 'Fedecajas' : headTitle}</title>
             </Head>
             <Header />
             <main>

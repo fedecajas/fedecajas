@@ -86,10 +86,10 @@ import comfamiliarHuilaImg1 from '@images/cajas/comfamiliar-huila/images/comfami
 import comfamiliarHuilaImg2 from '@images/cajas/comfamiliar-huila/images/comfamiliar-img2.jpg';
 import comfamiliarHuilaImg3 from '@images/cajas/comfamiliar-huila/images/comfamiliar-img3.jpg';
 
-import comfamiliarNariñoLogo from '@images/cajas/comfamiliar-nariño/logo/comfamiliar-nariño-logo.jpg';
-import comfamiliarNariñoImg1 from '@images/cajas/comfamiliar-nariño/images/comfamiliar-nariño-img1.jpg';
-import comfamiliarNariñoImg2 from '@images/cajas/comfamiliar-nariño/images/comfamiliar-nariño-img2.jpg';
-import comfamiliarNariñoImg3 from '@images/cajas/comfamiliar-nariño/images/comfamiliar-nariño-img3.jpg';
+import comfamiliarNariñoLogo from '@images/cajas/comfamiliar-narino/logo/comfamiliar-narino-logo.jpg';
+import comfamiliarNariñoImg1 from '@images/cajas/comfamiliar-narino/images/comfamiliar-narino-img1.jpg';
+import comfamiliarNariñoImg2 from '@images/cajas/comfamiliar-narino/images/comfamiliar-narino-img2.jpg';
+import comfamiliarNariñoImg3 from '@images/cajas/comfamiliar-narino/images/comfamiliar-narino-img3.jpg';
 
 import comfaguajiraLogo from '@images/cajas/comfaguajira/logo/comfaguajira-logo.png'
 import comfaguajiraImg1 from '@images/cajas/comfaguajira/images/comfaguajira-img1.jpg'

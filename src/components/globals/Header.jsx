@@ -43,41 +43,41 @@ const Header = (props) => {
                             cajasMenu &&
                             cajas.map(({ title, ruta }) => {
                                 return (
-                                    <Link  key={ruta} href={`/cajas/${ruta}`}>
+                                    <Link key={ruta} href={`/cajas/${ruta}`}>
                                         <a onClick={() => setTimeout(() => { setMenu(!menu); setCajasMenu(!cajasMenu) }, 200)}>{title}</a>
                                     </Link>
                                 )
                             }) ||
                             academicoMenu &&
                             <>
-                                <Link  href={'/gce'}>
+                                <Link href={'/gce'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu); setAcademicoMenu(!academicoMenu) }, 200)}>GRUPO CONSULTOR EDUCATIVO GCE</a>
                                 </Link>
-                                <Link  href={'/consultores'}>
+                                <Link href={'/consultores'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu); setAcademicoMenu(!academicoMenu) }, 200)}>NUESTROS CONSULTORES</a>
                                 </Link>
-                                <Link  href={'/contenido'}>
+                                <Link href={'/contenido'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu); setAcademicoMenu(!academicoMenu) }, 200)}>CONTENIDO</a>
                                 </Link>
                             </> ||
                             !cajasMenu && !academicoMenu &&
                             <>
-                                <Link  href={'/'}>
+                                <Link href={'/home'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu) }, 200)}>Home</a>
                                 </Link>
-                                <Link  href={'/nosotros'}>
+                                <Link href={'/nosotros'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu) }, 200)}>Nosotros</a>
                                 </Link>
-                                <Link  href={'#'}>
+                                <Link href={'#'}>
                                     <a onClick={() => handleContent('cajas')}>Cajas</a>
                                 </Link>
-                                <Link  href={'/mapacajas'}>
+                                <Link href={'/mapacajas'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu) }, 200)}>Mapa Interactivo</a>
                                 </Link>
-                                <Link  href={'#'}>
+                                <Link href={'#'}>
                                     <a onClick={() => handleContent('academico')}>Fedecajas Académico</a>
                                 </Link>
-                                <Link  href={'/contacto'}>
+                                <Link href={'/contacto'}>
                                     <a onClick={() => handleContent('academico')}>Contacto</a>
                                 </Link>
                             </>
