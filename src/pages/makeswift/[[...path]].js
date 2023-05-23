@@ -1,4 +1,4 @@
-import '../lib/makeswift/register-components';
+import '../../lib/makeswift/register-components';
 
 import { Makeswift, Page as MakeswiftPage } from '@makeswift/runtime/next'
 

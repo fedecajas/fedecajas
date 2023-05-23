@@ -6,6 +6,7 @@ const globals = css.global`
     * {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
 
     body {
@@ -19,7 +20,6 @@ const globals = css.global`
         box-sizing: border-box;
         animation-name: fadeIn;
         animation-duration: 1.8s;
-        will-change: opacity, transform;
     }
 
     main {

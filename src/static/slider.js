@@ -38,7 +38,7 @@ export const slides = [
         type: 'img',
         content: four,
         title: 'Fedecajas académico',
-        link: '/gce',
+        link: '',
     },
 ]
 

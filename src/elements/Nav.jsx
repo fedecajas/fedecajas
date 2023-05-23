@@ -46,14 +46,14 @@ export default function Nav(props) {
     return (
         <>
             <nav className={main['header__nav']}>
-                <Link href={'/home'}>
+                <Link href={'/'}>
                     <a>
                         <Logo size={1.4} />
                     </a>
                 </Link>
 
                 <ul className={main['header__nav-links']}>
-                    <li><Link href={'/home'}><a><AiFillHome size={15} /> INICIO </a></Link></li>
+                    <li><Link href={'/'}><a><AiFillHome size={15} /> INICIO </a></Link></li>
                     <li><Link href={'/nosotros'}><a> NOSOTROS </a></Link></li>
                     <li
                         onMouseEnter={() => handleMouseEnter('cajas')}

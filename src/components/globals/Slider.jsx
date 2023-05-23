@@ -164,7 +164,7 @@ const Slider = (props) => {
                                                 <>
                                                     <h2>Nuestras</h2>
                                                     <h1>Cajas en <br />COLOMBIA</h1>
-                                                    <a className={main['button__info-slider']} href={link} target='_blank'>
+                                                    <a className={main['button__info-slider']} href={link}>
                                                         Ingresa aquí
                                                     </a>
                                                 </>
@@ -173,19 +173,10 @@ const Slider = (props) => {
                                     }
                                     {
                                         title === 'Festival caja de cine' &&
-                                        <>
-                                            <a href={link} className={main['mainContainer__slide-info_fest']}>
-                                                <h1>Festival Caja de Cine</h1>
-                                                <h3>www.festivalcajadecine.com</h3>
-                                            </a>
-                                        </> ||
-                                        title === 'Fedecajas académico' &&
-                                        <>
-                                            <div className={main['mainContainer__slide-info_fest']}>
-                                                <h2>Fedecajas Académico</h2>
-                                                <a href={link} className={main['button__info-slider']}>Ingresa aquí</a>
-                                            </div>
-                                        </>
+                                        <a target='_blank' href={link} className={main['mainContainer__slide-info_fest']}>
+                                            <h1>Festival Caja de Cine</h1>
+                                            <h3>www.festivalcajadecine.com</h3>
+                                        </a>
                                     }
                                 </Slide>
                             )

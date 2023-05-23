@@ -1,13 +1,12 @@
 import { useEffect } from "react"
-import { createPortal } from "react-dom"
 
 /* Styles */
 import main from '@styles/main.module.scss';
 
 /* React icons */
-import {MdOutlineCancel} from "react-icons/md";
+import { MdOutlineCancel } from "react-icons/md";
 
-const Modal= ({ children, modal, setModal }) => {
+const Modal = ({ children, modal, setModal }) => {
 
     useEffect(() => {
         setModal(true)
@@ -18,11 +17,9 @@ const Modal= ({ children, modal, setModal }) => {
         setModal(false)
 
         const portal = document.querySelector('#myportal')
-        portal.classList.add('displayNone')
     }
 
-    return modal
-        ? createPortal(
+    return (
         <section onClick={() => handleClick()} className={main['modal']}>
             {children}
             <MdOutlineCancel
@@ -31,8 +28,8 @@ const Modal= ({ children, modal, setModal }) => {
                 className={main['modal__close']}
                 onClick={() => handleClick()}
             />
-        </section>,
-        document.querySelector("#myportal")) : null
+        </section>
+    )
 }
 
 export default Modal

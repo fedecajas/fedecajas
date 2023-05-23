@@ -1,16 +1,15 @@
 .modal {
     @extend %flex-column-center;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: map-get($landscape, modal);
     animation: 0.3s translate-down ease-in-out;
+    overflow: hidden;
     background-color: rgba($color: $blackColor, $alpha: 0.9);
-    overflow-y: hidden; /* Hide vertical scrollbar */
-    overflow-x: hidden; /* Hide horizontal scrollbar */
     & > ul {
         width: max-content;
     }
