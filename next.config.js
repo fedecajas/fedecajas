@@ -7,6 +7,9 @@ const withMakeswift = require('@makeswift/runtime/next/plugin')()
 const nextConfig = {
     reactStrictMode: true,
     swcMinify: true,
+    images: {
+        domains: ['https://fedecajas-back-0572341514a8.herokuapp.com'],
+    },
 }
 
 const styledComponent = {

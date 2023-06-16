@@ -1,9 +1,7 @@
-import '../../lib/makeswift/register-components';
-
 import { Makeswift, Page as MakeswiftPage } from '@makeswift/runtime/next'
 
 export async function getStaticPaths() {
-    const makeswift = new Makeswift(process.env.API_MAKESWIFT)
+    const makeswift = new Makeswift('deb3009b-5e6a-41d7-b35a-79a0629ff452')
     const pages = await makeswift.getPages()
 
     return {
@@ -15,8 +13,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(ctx) {
-    const makeswift = new Makeswift(process.env.API_MAKESWIFT)
-    const path = '/' + (ctx.params?.path ?? []).join('/')
+    const makeswift = new Makeswift('deb3009b-5e6a-41d7-b35a-79a0629ff452')
+    const path = '/' + (ctx.params?.path ?? []).join('/home')
     const snapshot = await makeswift.getPageSnapshot(path, { preview: ctx.preview })
 
     if (snapshot == null) return { notFound: true }

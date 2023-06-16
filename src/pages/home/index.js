@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { localHost } from '@utils/configHost';
 
 /* Components */
 import Title from '@elements/Title';
@@ -21,11 +22,12 @@ import Slider from '@components/globals/Slider';
 /* Styles */
 import main from '@styles/main.module.scss';
 
-function Index() {
+function Index({ heroContent }) {
     const [modal, setModal] = useState(false);
     const [myWidth, setMyWidth] = useState(0)
 
     useEffect(() => {
+        console.log(heroContent)
         const width = window.innerWidth
         setMyWidth(width);
         setModal(true);
@@ -51,13 +53,25 @@ function Index() {
             {
                 slides2 &&
                 <Slider
-                multimedia={slides2}
-                slideDescription={slideDescription}
-                token={'fest'}
-            />
+                    multimedia={slides2}
+                    slideDescription={slideDescription}
+                    token={'fest'}
+                />
             }
         </Limiter>
     );
+}
+
+export async function getServerSideProps() {
+    const url = 'https://fedecajas-back-0572341514a8.herokuapp.com/hero-sliders'
+    const response = await fetch(url)
+    const data = await response.json();
+    return {
+        props: {
+            heroContent: data
+        }
+    }
+
 }
 
 export default Index;

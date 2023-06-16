@@ -62,7 +62,7 @@ const Header = (props) => {
                             </> ||
                             !cajasMenu && !academicoMenu &&
                             <>
-                                <Link href={'/'}>
+                                <Link href={'/home'}>
                                     <a onClick={() => setTimeout(() => { setMenu(!menu) }, 200)}>Home</a>
                                 </Link>
                                 <Link href={'/nosotros'}>
