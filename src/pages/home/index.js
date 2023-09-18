@@ -62,16 +62,18 @@ function Index({ heroContent }) {
     );
 }
 
-export async function getServerSideProps() {
-    const url = 'https://fedecajas-back-0572341514a8.herokuapp.com/hero-sliders'
-    const response = await fetch(url)
-    const data = await response.json();
-    return {
-        props: {
-            heroContent: data
+/*
+    export async function getServerSideProps() {
+        const url = ''
+        const response = await fetch(url)
+        const data = await response.json();
+        return {
+            props: {
+                heroContent: data
+            }
         }
-    }
 
-}
+    }
+*/
 
 export default Index;
